@@ -22,6 +22,7 @@ h3 {
   background-image: url(../img/blogo.png);
 }
 a {
+  font-weight: 700;
   color: #ff0b0b;
   text-decoration: none;
 }
