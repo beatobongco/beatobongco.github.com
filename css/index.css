@@ -22,7 +22,7 @@ h3 {
   font-weight: 400;
 }
 .blogo {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +82,7 @@ a.hover {
 }
 .main-content .right-container {
   width: 500px;
-  margin-top: 200px;
+  margin-top: 250px;
   margin-left: 25px;
   display: -webkit-flex;
   display: flex;
@@ -135,7 +135,7 @@ a.hover {
   height: 130px;
 }
 .viewer {
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 18px;
 }
 /* 2D TRANSITIONS */
