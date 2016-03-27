@@ -1,8 +1,13 @@
-body {
-  text-align: center;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 h1 {
+  font-size: 38px;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
@@ -12,17 +17,43 @@ h3, p {
 }
 
 h3 {
-  font-size: 1em;
+  margin: 0;
+  font-size: 30px;
   font-weight: 400;
 }
 
 .blogo {
   margin-top: 50px;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
   height: 100px;
   background-image: url(../img/blogo.png);
+}
+
+.main-link {
+  display: block;
+  text-transform: uppercase;
+  &.link-insync {
+    font-size: 70px;
+  }
+  &.link-incorgito {
+    font-size: 46px;
+  }
+  &.link-beknowntho {
+    font-size: 35px;
+  }
+}
+
+.climb-line {
+  margin: 0;
+  font-size: 17px;
+}
+
+.write-line {
+  margin: 0;
+  font-size: 26px;
 }
 
 a {
@@ -43,52 +74,98 @@ a:hover, a.hover {
   background-image: url(../img/hands.png);
   background-size: cover;
   margin-top: -8px;
-  margin-right: 3px;
-  margin-left: 3px;
 }
 
+.main-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  .left-container, .right-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .right-container {
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .left-container {
+    .calling-card {
+      margin-left: auto;
+      border-right: 2px solid red;
+      width: 296px;
+    }
+  }
+}
+
+
 .i-container {
-  position: relative;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  // position: relative;
+  // text-align: center;
+  // margin-top: 255px;
+  // margin-bottom: 150px;
+  // width: 360px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   .logo {
-    position: absolute;
+    // position: absolute;
     display: block;
     background-size: cover;
-    left: 50%;
+    // left: 50%;
 
     &.insync-logo {
       width: 130px;
       height: 42px;
-      top: -72px;
-      margin-left: -65px;
+      // top: -72px;
+      // margin-left: -65px;
       background-image: url(../img/insync_logo.png);
     }
 
     &.beknowntho-logo {
       width: 100px;
       height: 100px;
-      top: 250px;
-      margin-left: 125px;
+      // top: 150px;
+      // margin-left: 75px;
       background-image: url(../img/beknowntho_logo.png);
     }
 
     &.incorgito-logo {
       width: 100px;
       height: 100px;
-      top: 250px;
-      margin-left: -225px;
+      margin: 0 50px;
+      // top: 150px;
+      // margin-left: -175px;
       background-image: url(../img/incorgito_logo.png);
     }
   }
 
   .illuminati {
     margin: 0 auto;
-    background-image: url(../img/triangle250.png);
-    width: 250px;
-    height: 217px;
+    background-image: url(../img/triangle150.png);
+    width: 150px;
+    height: 130px;
   }
+}
+
+.viewer {
+  margin-top: 25px;
+  font-size: 18px;
 }
 
 /* 2D TRANSITIONS */
@@ -109,6 +186,6 @@ a:hover, a.hover {
   transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active, .hvr-grow.hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }

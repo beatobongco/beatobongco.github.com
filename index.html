@@ -9,42 +9,48 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <a href="http://beatobongco.com"><div class="blogo"></div></a>
-  <h1>beatobongco</h1>
-  <h3>
-  Startup web + data engineer for
-  <a class="link-insync"
-    hover-link="insync-logo"
-    hover-description="The most powerful Google Drive client ever built."
-    href="https://www.insynchq.com/">Insync</a>,
-  <a class="link-incorgito"
-    hover-link="incorgito-logo"
-    hover-description="Agile software development team."
-    href="https://incorgito.com/">Incorgito</a>,
-  <a class="link-beknowntho"
-    hover-link="beknowntho-logo"
-    hover-description="E-commerce site for products sourced across Asia."
-    href="https://beknowntho.com/">Beknowntho</a>.
-  </h3>
-  <p>
-  Loves climbing. Psyche is high. <span class="emoji-praise"></span>
-  I
-    <a
-      class="link-write"
-      hover-description="Tech, self-improvement, climbing, occasional bad poetry."
-      href="https://medium.com/@beatobongco">
-      write</a>
-    sometimes, too.
-  </p>
+  <div class="main-content">
+    <div class="left-container">
+      <div class="calling-card">
+        <a href="http://beatobongco.com"><div class="blogo"></div></a>
+        <h1>beatobongco</h1>
+        <h3>web + data engineer</h3>
+        <a class="main-link link-insync"
+          hover-link="insync-logo"
+          hover-description="The most powerful Google Drive client ever built."
+          href="https://www.insynchq.com/">Insync</a>
+        <a class="main-link link-incorgito"
+          hover-link="incorgito-logo"
+          hover-description="Agile software development team."
+          href="https://incorgito.com/">Incorgito</a>
+        <a class="main-link link-beknowntho"
+          hover-link="beknowntho-logo"
+          hover-description="E-commerce site for Binondo + Asia products."
+          href="https://beknowntho.com/">Beknowntho</a>
+        <p class="climb-line">
+        Loves climbing. Psyche is high. <span class="emoji-praise"></span>
+        </p>
+        <p class="write-line">
+          <a
+            class="link-write"
+            hover-description="Tech, self-improvement, climbing, occasional bad poetry."
+            href="https://medium.com/@beatobongco">
+            Writes</a>
+          sometimes, too.
+        </p>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="i-container">
+        <a class="logo insync-logo hvr-grow" href="https://www.insynchq.com/"></a>
 
-  <div class="i-container">
-    <a class="logo insync-logo hvr-grow" href="https://www.insynchq.com/"></a>
+        <a class="logo incorgito-logo hvr-grow" href="https://incorgito.com/"></a>
 
-    <a class="logo incorgito-logo hvr-grow" href="https://incorgito.com/"></a>
+        <a class="logo beknowntho-logo hvr-grow" href="https://beknowntho.com/"></a>
 
-    <a class="logo beknowntho-logo hvr-grow" href="https://beknowntho.com/"></a>
-    <div class="illuminati"></div>
-    <p class="viewer"></p>
+      </div>
+      <p class="viewer">&nbsp;</p>
+    </div>
   </div>
 
   <script type="text/javascript">
@@ -62,7 +68,7 @@
         }).bind(this, linkedEl, el.getAttribute('hover-description')))
 
         el.addEventListener('mouseout', (function(x) {
-          $('.viewer').innerHTML = null
+          $('.viewer').innerHTML = "&nbsp;"
           x ? x.classList.remove('hover') : null
         }).bind(this, linkedEl))
 
@@ -73,7 +79,7 @@
           }).bind(this, el, el.getAttribute('hover-description')))
 
           linkedEl.addEventListener('mouseout', (function(x) {
-            $('.viewer').innerHTML = null
+            $('.viewer').innerHTML = "&nbsp;"
             x.classList.remove('hover')
           }).bind(this, el))
         }
