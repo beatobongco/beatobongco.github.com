@@ -97,6 +97,7 @@ a.hover {
   margin-left: auto;
   border-right: 2px solid red;
   width: 296px;
+  text-align: center;
 }
 .i-container {
   display: -webkit-flex;
