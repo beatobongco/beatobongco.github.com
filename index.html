@@ -1,9 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Web + data engineer = beatobongco.com</title>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <h1>Hello world!</h1>
+  <div class="blogo"></div>
+  <h1>beatobongco</h1>
+  <h3>
+  Startup web + data engineer for
+  <a class="link-insync"
+    hover-link="insync-logo"
+    hover-description="The most powerful Google Drive client ever built."
+    href="https://www.insynchq.com/">Insync</a>,
+  <a class="link-incorgito"
+    hover-link="incorgito-logo"
+    hover-description="Agile software development team."
+    href="https://incorgito.com/">Incorgito</a>,
+  <a class="link-beknowntho"
+    hover-link="beknowntho-logo"
+    hover-description="E-commerce site for products sourced across Asia."
+    href="https://beknowntho.com/">Beknowntho</a>.
+  </h3>
+  <p>Loves climbing. Psyche is high. <span class="emoji-praise"></span></p>
+  <p>I
+  <a
+    class="link-write"
+    hover-description="Tech, self-improvement, climbing, occasional bad poetry."
+    href="https://medium.com/@beatobongco">write</a> sometimes, too.</p>
+
+  <div class="i-container">
+    <a class="logo insync-logo hvr-grow" href="https://www.insynchq.com/"></a>
+
+    <a class="logo incorgito-logo hvr-grow" href="https://incorgito.com/"></a>
+
+    <a class="logo beknowntho-logo hvr-grow" href="https://beknowntho.com/"></a>
+    <div class="illuminati"></div>
+    <p class="viewer"></p>
+  </div>
+
+  <script type="text/javascript">
+    $ = document.querySelector.bind(document)
+
+    function bindHoverStates(selectors) {
+      for (var i=0; i < selectors.length; i++) {
+        var selector = selectors[i]
+        var el = $(selector)
+        var linkedEl = $("." + el.getAttribute('hover-link'))
+
+        el.addEventListener('mouseover', (function(x, y) {
+          $('.viewer').innerHTML = y
+          x ? x.classList.add('hover') : null
+        }).bind(this, linkedEl, el.getAttribute('hover-description')))
+
+        el.addEventListener('mouseout', (function(x) {
+          $('.viewer').innerHTML = null
+          x ? x.classList.remove('hover') : null
+        }).bind(this, linkedEl))
+
+        if (linkedEl) {
+          linkedEl.addEventListener('mouseover', (function(x, y) {
+            $('.viewer').innerHTML = y
+            x.classList.add('hover')
+          }).bind(this, el, el.getAttribute('hover-description')))
+
+          linkedEl.addEventListener('mouseout', (function(x) {
+            $('.viewer').innerHTML = null
+            x.classList.remove('hover')
+          }).bind(this, el))
+        }
+      }
+    }
+
+    bindHoverStates(['.link-insync',
+      '.link-incorgito',
+      '.link-beknowntho',
+      '.link-write'])
+  </script>
 </body>
 </html>
