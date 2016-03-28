@@ -138,6 +138,7 @@ a.hover {
   font-size: 18px;
 }
 .social {
+  margin-top: 5px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -154,11 +155,17 @@ a.hover {
   background-image: url(../img/fb_64.png);
 }
 .social a.gh {
-  margin: 0 30px;
+  margin-left: 10px;
+  margin-right: 5px;
   background-image: url(../img/gh_64.png);
 }
 .social a.linkedin {
+  margin-left: 5px;
+  margin-right: 10px;
   background-image: url(../img/linkedin_64.png);
+}
+.social a.mail {
+  background-image: url(../img/mail_64.png);
 }
 /* 2D TRANSITIONS */
 /* Grow */
