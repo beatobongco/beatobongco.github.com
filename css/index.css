@@ -75,11 +75,6 @@ a.hover {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.main-content .left-container,
-.main-content .right-container {
-  display: inline-block;
-  vertical-align: middle;
-}
 .main-content .right-container {
   width: 500px;
   margin-top: 250px;
