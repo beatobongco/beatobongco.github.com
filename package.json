@@ -1,0 +1,20 @@
+{
+  "name": "beatobongco.github.com",
+  "version": "1.0.0",
+  "description": "Personal calling card/website",
+  "main": "index.js",
+  "scripts": {
+    "watch": "autoless less/ css/",
+    "build": "lessc --clean-css='--compatibility=ie8 --advanced' less/index.less css/index.min.css && uglifyjs js/index.js -o js/index.min.js -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatobongco/beatobongco.github.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatobongco/beatobongco.github.com/issues"
+  },
+  "homepage": "https://github.com/beatobongco/beatobongco.github.com#readme"
+}
