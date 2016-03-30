@@ -1,4 +1,5 @@
 // UTIL
+window.scroll(0, 1)
 function $(q) {
   e = document.querySelectorAll(q)
   if (e.length === 0) {
@@ -60,7 +61,7 @@ function bindHoverStates(c) {
       if (x) {
         x.classList.add('hover')
       }
-    }).bind(this, linkedEl, el.getAttribute('hover-description')))
+    }).bind(this, linkedEl, el.getAttribute('title')))
 
     el.addEventListener('mouseout', (function(x) {
       // $('.viewer').innerHTML = "&nbsp;"
@@ -76,7 +77,7 @@ function bindHoverStates(c) {
         $('.viewer').innerHTML = y
         x.classList.add('hover')
         animateViewer(z)
-      }).bind(this, el, el.getAttribute('hover-description'), linkedEl))
+      }).bind(this, el, el.getAttribute('title'), linkedEl))
 
       linkedEl.addEventListener('mouseout', (function(x) {
         // $('.viewer').innerHTML = "&nbsp;"
