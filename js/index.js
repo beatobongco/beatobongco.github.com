@@ -53,7 +53,7 @@ function bindHoverStates(c) {
   selectors = $(c)
   for (var i=0; i < selectors.length; i++) {
     var el = selectors[i]
-    var linkedEl = $("." + el.getAttribute('hover-link'))
+    var linkedEl = $("." + el.getAttribute('data-hover-link'))
 
     el.addEventListener('mouseover', (function(x, y) {
       $('.viewer').innerHTML = y
@@ -61,7 +61,7 @@ function bindHoverStates(c) {
       if (x) {
         x.classList.add('hover')
       }
-    }).bind(this, linkedEl, el.getAttribute('title')))
+    }).bind(this, linkedEl, el.getAttribute('data-title')))
 
     el.addEventListener('mouseout', (function(x) {
       // $('.viewer').innerHTML = "&nbsp;"
@@ -77,7 +77,7 @@ function bindHoverStates(c) {
         $('.viewer').innerHTML = y
         x.classList.add('hover')
         animateViewer(z)
-      }).bind(this, el, el.getAttribute('title'), linkedEl))
+      }).bind(this, el, el.getAttribute('data-title'), linkedEl))
 
       linkedEl.addEventListener('mouseout', (function(x) {
         // $('.viewer').innerHTML = "&nbsp;"
