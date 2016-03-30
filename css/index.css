@@ -167,6 +167,17 @@ a.hover {
 .social a.mail {
   background-image: url(../img/mail_64.png);
 }
+@media (max-width: 767px) {
+  .calling-card {
+    border-right: 0 !important;
+  }
+  .right-container {
+    display: none !important;
+  }
+  .blogo {
+    margin-top: 25px !important;
+  }
+}
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
