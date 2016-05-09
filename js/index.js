@@ -1,5 +1,4 @@
 // UTIL
-window.scroll(0, 1)
 function $(q) {
   e = document.querySelectorAll(q)
   if (e.length === 0) {
