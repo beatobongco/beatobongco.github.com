@@ -18,7 +18,7 @@ p {
 }
 h3 {
   margin: 0;
-  font-size: 32px;
+  font-size: 31px;
   font-weight: 400;
 }
 .blogo {
@@ -31,7 +31,6 @@ h3 {
   background-image: url(../img/blogo.png);
 }
 .main-link:not(.sub-link) {
-  margin: 5px 0;
   display: block;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -40,14 +39,11 @@ h3 {
   font-size: 70px;
 }
 .main-link.link-incorgito {
-  font-size: 46px;
-}
-.main-link.link-beknowntho {
-  font-size: 35px;
+  font-size: 47px;
 }
 .design-line {
   margin: 5px 0;
-  font-size: 25px;
+  font-size: 24px;
 }
 .climb-line {
   margin: 5px 0;
@@ -96,6 +92,7 @@ a.hover {
   justify-content: center;
 }
 .main-content .left-container .calling-card {
+  margin-top: 2rem;
   margin-left: auto;
   border-right: 2px solid red;
   width: 325px;
@@ -142,7 +139,7 @@ a.hover {
   font-size: 18px;
 }
 .social {
-  margin-top: 5px;
+  margin-top: .5rem;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -151,21 +148,18 @@ a.hover {
   justify-content: center;
 }
 .social a {
-  width: 58px;
-  height: 58px;
+  width: 32px;
+  height: 32px;
   background-size: cover;
+  margin: 0 1rem;
 }
 .social a.fb {
   background-image: url(../img/fb_64.png);
 }
 .social a.gh {
-  margin-left: 10px;
-  margin-right: 5px;
   background-image: url(../img/gh_64.png);
 }
 .social a.linkedin {
-  margin-left: 5px;
-  margin-right: 10px;
   background-image: url(../img/linkedin_64.png);
 }
 .social a.mail {
