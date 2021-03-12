@@ -53,3 +53,11 @@ h1.site-header .logo {
 h1.site-header span {
   margin-left: 1rem;
 }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.card-container .card {
+  margin: 0 1rem;
+}
