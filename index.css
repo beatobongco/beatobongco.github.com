@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 2rem;
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 728px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #ff0b0b;
+}
+.cta {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: white;
+  background-color: #ff0b0b;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.email-wrapper {
+  padding-bottom: 13px;
+}
+.email-wrapper span {
+  color: #ff0b0b;
+  font-weight: bold;
+}
+h1.site-header {
+  display: flex;
+  align-items: center;
+}
+h1.site-header .logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(./img/blogo.png);
+  cursor: pointer;
+}
+h1.site-header span {
+  margin-left: 1rem;
+}

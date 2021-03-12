@@ -29,46 +29,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        padding: 0.5rem 2rem;
-        line-height: 1.5;
-        font-size: 1.15rem;
-      }
-      .wrapper {
-        margin: 0 auto;
-        max-width: 768px;
-      }
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        color: #ff0b0b;
-      }
-      .cta {
-        font-size: 1.17em;
-        font-weight: bold;
-        color: white;
-        background-color: #ff0b0b;
-        padding: 0.5rem 1rem;
-        border-radius: 3px;
-        border: none;
-        cursor: pointer;
-        margin-bottom: 1rem;
-      }
-      .email-wrapper {
-        padding-bottom: 13px;
-      }
-      .email-wrapper span {
-        color: #ff0b0b;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="wrapper">
-      <h1>Beato Bongco</h1>
+      <h1 class="site-header">
+        <a href="https://beatobongco.com">
+          <div class="logo"></div>
+        </a>
+        <span>Beato Bongco</span>
+      </h1>
       <h3>Full-stack Natural Language Processing and Web Engineering</h3>
       <p>
         Hi, I’m Beato and I’ve been building software for the last 10 years,
@@ -76,16 +46,16 @@
       </p>
 
       <p>
-        I am deeply interested in artificial intelligence and
-        <a href="https://beatobongco.com/UI-Kata/">user interfaces</a>.
+        I am deeply interested in artificial intelligence and user interfaces
+        (see: <a href="https://beatobongco.com/UI-Kata/">toy projects</a>).
       </p>
 
       <p>
         I worked as a senior product engineer building natural language systems
-        at <a href="https://thinkingmachin.es/">Thinking Machines</a> for 2
-        years and as a senior full-stack web engineer + head of UI and
-        operations at <a href="https://www.insynchq.com/">Insync</a> for 5
-        years.
+        for international clients at
+        <a href="https://thinkingmachin.es/">Thinking Machines</a> for 2 years
+        and as a senior full-stack web engineer + head of UI and operations at
+        <a href="https://www.insynchq.com/">Insync</a> for 5 years.
       </p>
 
       <p>
@@ -167,37 +137,6 @@
       <p>Watch this space for blog posts!</p>
       <p><small>© 2021 Beato Bongco</small></p>
     </div>
-    <script>
-      const obfuscated = "@ctigboeaomgbnocomal.";
-      const key = [11, 18, 3, 15, 12, 5, 4, 1, 14, 19, 13, 8, 0, 7, 6, 9, 10, 20, 2, 16, 17] //prettier-ignore
-      function decode() {
-        let decoded = [];
-        key.forEach((curr, idx) => {
-          decoded[curr] = obfuscated[idx];
-        });
-        return decoded.join("");
-      }
-      document.querySelectorAll(".cta").forEach((item) => {
-        item.addEventListener("click", (e) => {
-          const decoded = decode();
-          const el = document.createElement("div");
-          el.className = "email-wrapper";
-          const spn = document.createElement("span");
-          spn.innerHTML = "Shoot me an email at: ";
-          const inp = document.createElement("input");
-          inp.value = decoded;
-          el.appendChild(spn);
-          el.appendChild(inp);
-          e.target.parentElement.appendChild(el);
-          inp.select();
-          // copy email to clipboard -- though might be intrusive
-          // inp.setSelectionRange(0, 9999);
-          // document.execCommand("copy");
-          item.style.display = "none";
-          window.location.href =
-            "mailto:" + decoded + "?subject=Let's work together!";
-        });
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
