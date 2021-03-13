@@ -9,12 +9,12 @@ html {
 h1 {
   font-size: 40px;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 h3,
 p {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 h3 {
   margin: 0;
@@ -33,13 +33,16 @@ h3 {
 .main-link:not(.sub-link) {
   display: block;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .main-link.link-insync {
   font-size: 70px;
 }
 .main-link.link-incorgito {
   font-size: 47px;
+}
+.main-link.link-beknowntho {
+  font-size: 35px;
 }
 .design-line {
   margin: 5px 0;
@@ -139,7 +142,7 @@ a.hover {
   font-size: 18px;
 }
 .social {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -253,10 +256,10 @@ a.hover {
 .hvr-hang:active {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
