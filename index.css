@@ -73,3 +73,21 @@ h1.site-header span {
   color: #ff0b0b;
   font-weight: bold;
 }
+.banner {
+  display: flex;
+  align-items: center;
+  height: 230px;
+  background-position: center;
+  background-image: url(./img/beatobanner.png);
+}
+.banner .cta-wrapper {
+  margin: 0 auto;
+}
+.banner .cta-wrapper .cta {
+  margin-bottom: 0;
+}
+.banner .cta-wrapper .email-wrapper span {
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-weight: 500;
+}
