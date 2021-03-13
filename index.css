@@ -64,27 +64,24 @@ h1.site-header span {
   border-radius: 3px;
   border: none;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 .email-wrapper {
   padding-bottom: 13px;
 }
-.email-wrapper span {
-  color: #ff0b0b;
-  font-weight: bold;
-}
 .banner {
   display: flex;
   align-items: center;
-  height: 230px;
+  height: 275px;
   background-position: center;
-  background-image: url(./img/beatobanner.png);
+}
+.banner-1 {
+  background-image: url(./img/banner1.png);
+}
+.banner-2 {
+  background-image: url(./img/banner2.png);
 }
 .banner .cta-wrapper {
   margin: 0 auto;
-}
-.banner .cta-wrapper .cta {
-  margin-bottom: 0;
 }
 .banner .cta-wrapper .email-wrapper span {
   color: white;
