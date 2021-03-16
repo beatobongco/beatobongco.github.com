@@ -65,6 +65,10 @@ h1.site-header span {
   border: none;
   cursor: pointer;
 }
+.cta-wrapper a {
+  color: white;
+  text-decoration: none;
+}
 .email-wrapper {
   padding-bottom: 13px;
   text-align: center;
