@@ -1,237 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      Beato Bongco - Full-stack Natural Language Processing and Web Engineering
-    </title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:description"
-      content="Beato Bongco - Full-stack Natural Language Processing and Web Engineering"
-    />
-    <meta name="title" content="Beato Bongco" />
-    <meta
-      name="description"
-      content="Beato Bongco - Full-stack Natural Language Processing and Web Engineering"
-    />
-    <meta property="og:title" content="Beato Bongco" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://beatobongco.com/" />
-    <meta property="og:image" content="https://beatobongco.com/img/og.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1 class="site-header">
-        <a href="https://beatobongco.com">
-          <div class="logo"></div>
-        </a>
-        <span>Beato Bongco</span>
-      </h1>
 
-      <h3>Full-stack Natural Language Processing and Web Engineering</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beato Bongco | anycase.ai</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Courier', monospace;
+            background-color: #f8f6f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
 
-      <div class="social-links">
-        <a class="linkedin" href="https://www.linkedin.com/in/beatobongco">
-          <img src="img/linkedin.png" alt="linkedin link" />
-        </a>
-        <a class="github" href="https://github.com/beatobongco">
-          <img src="img/github.png" alt="github link" />
-        </a>
-        <a class="twitter" href="https://twitter.com/beatobongco">
-          <img src="img/twitter.png" alt="linkedin link" />
-        </a>
-      </div>
+        .card {
+            background-color: #fff;
+            width: 90%;
+            max-width: 787px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
 
-      <p>
-        Hi, I’m Beato and I’ve been building software for the last 10 years,
-        mostly in Python and Javascript.
-      </p>
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.6;
+        }
 
-      <p>
-        I am deeply interested in artificial intelligence and user interfaces
-        (see: <a href="https://beatobongco.com/UI-Kata/">toy projects</a>).
-      </p>
+        .name {
+            font-size: 36px;
+            font-weight: 600;
+            border-bottom: 1px solid #b30000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #b30000;
+        }
 
-      <p>
-        I worked as a senior product engineer building natural language,
-        information retrieval, and machine learning systems at
-        <a href="https://thinkingmachin.es/">Thinking Machines</a> for 2 years.
-      </p>
+        .title {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 18px;
+        }
 
-      <p>
-        Before that I was senior full-stack web engineer + head of UI and
-        operations at <a href="https://www.insynchq.com/">Insync</a> for 5
-        years. There I led a UI engineering team building a cross-platform
-        desktop application in React, built an analytics dashboard, and improved
-        development and onboarding processes.
-      </p>
+        .title a {
+            font-weight: 600;
+        }
 
-      <p>
-        I've also been consulting for businesses since I was in my junior year
-        in university.
-      </p>
+        .highlight {
+            color: #b30000;
+        }
 
-      <p>
-        I’ve researched, prototyped, built, improved, and deployed machine
-        learning models, frontend applications, and backend web systems to
-        production.
-      </p>
-      <div class="banner banner-1">
-        <div class="cta-wrapper">
-          <a href="mailto:beatobongco@gmail.com?subject=Let's work together!">
-            <button class="cta">Hire Me!</button>
-          </a>
-        </div>
-      </div>
+        .quote {
+            font-style: italic;
+            margin: 25px 0;
+            padding-left: 20px;
+            border-left: 2px solid #b30000;
+            font-size: 14px;
+            color: #555;
+        }
 
-      <p>I've worked extensively with technologies like:</p>
-      <div class="card-container">
+        /* .quote {
+            font-style: italic;
+            font-size: 14px;
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 2px solid #b30000;
+        } */
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        a {
+            color: #b30000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .x-logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .contact {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: #b30000;
+        }
+
+        .x-logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hidden-email {
+            color: #b30000;
+            cursor: pointer;
+        }
+
+        /* @media (max-width: 600px) {
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 30px;
+                width: 95%;
+            }
+
+            .name {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .quote {
+                font-size: 12px;
+            }
+        } */
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+                width: 95%;
+            }
+
+            .name {
+                font-size: 28px;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.4;
+                margin-bottom: 8px;
+            }
+
+            .highlight {
+                font-size: 15px;
+            }
+
+            .quote {
+                font-size: 13px;
+                line-height: 1.5;
+                margin: 20px 0;
+                padding-left: 15px;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                margin-top: 20px;
+            }
+
+            .hidden-email,
+            .x-logo {
+                font-size: 14px;
+            }
+        }
+
+        .design {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .geometric {
+            background-color: #f0f0f0;
+            background-image:
+                linear-gradient(#e6e6e6 1px, transparent 1px),
+                linear-gradient(90deg, #e6e6e6 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .geometric .card {
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b30000' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="design geometric">
         <div class="card">
-          <h4>frontend</h4>
-          <ul>
-            <li>React</li>
-            <li>Vue</li>
-            <li>Next.js</li>
-            <li>vanilla js</li>
-          </ul>
+            <h1 class="name">Beato Bongco</h1>
+            <h2 class="title"><a href="https://anycase.ai" target="_blank">Anycase.ai</a> - co-founder & CEO</h2>
+            <p><span class="highlight">Full-stack Web + NLP</span></p>
+            <p>Specializing in Retrieval Augmented Generation (RAG)</p>
+            <p>Augmenting legal professionals with Artificial Intelligence</p>
+            <div class="quote">
+                Men will set the goals, formulate the hypotheses, determine the criteria, and perform the evaluations.
+                Computing machines will do the routinizable work that must be done to prepare the way for insights and
+                decisions in technical and scientific thinking.
+                <br>- J.C.R. Licklider, <a href="https://groups.csail.mit.edu/medg/people/psz/Licklider.html"
+                    target="_blank">Man-Computer
+                    Symbiosis</a>
+            </div>
+            <div class="contact">
+                <p>E-mail: <span id="email" class="hidden-email" onclick="revealEmail()">Click to reveal</span></p>
+                <p>
+                    <span class="x-logo">𝕏</span>:
+                    <a href="https://x.com/brbongco" target="_blank">@brbongco</a>
+                </p>
+            </div>
         </div>
-        <div class="card">
-          <h4>machine learning</h4>
-          <ul>
-            <li>PyTorch</li>
-            <li>Keras</li>
-            <li>transformers</li>
-            <li>scikit-learn</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>backend</h4>
-          <ul>
-            <li>Flask</li>
-            <li>FastAPI</li>
-            <li>Starlette</li>
-            <li>Django</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>databases + misc</h4>
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>redis</li>
-            <li>Docker</li>
-            <li>Elasticsearch</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h4>cloud service providers</h4>
-          <ul>
-            <li>
-              Google Cloud Platform (<a
-                href="https://www.credential.net/bbf8c22a-b149-44bd-9e85-6b5ec1d1eb1e?key=0e044671fdbae586c19210364d71eeca844ee7b87bc7342ac54d1ed8d7915f09"
-                >certified data engineer</a
-              >)
-            </li>
-            <li>AWS</li>
-            <li>Digital Ocean</li>
-            <li>Vercel</li>
-          </ul>
-        </div>
-      </div>
-
-      <p>...but I'm always willing to learn new things in a jiffy!</p>
-
-      <p>
-        I'm available for <strong>remote consulting / contracting</strong> work.
-        My timezone is <strong>GMT+8</strong> but I can work in any timezone
-        since I am experienced in working asynchronously (<a
-          href="https://blog.doist.com/asynchronous-communication/"
-          >it's more productive!</a
-        >) and providing regular written updates.
-      </p>
-
-      <p>
-        I’d like to help build <strong>natural language processing</strong>,
-        <strong>information retrieval</strong>, or
-        <strong>web systems</strong> for your company, as well as any supporting
-        systems you may require like a webapp, a user interface, an API, data
-        ingestion scripts or pipelines, a machine learning model and more.
-      </p>
-
-      <p>Interested in working together?</p>
-
-      <div class="banner banner-2">
-        <div class="cta-wrapper">
-          <a href="mailto:beatobongco@gmail.com?subject=Let's work together!">
-            <button class="cta">Get in touch!</button>
-          </a>
-        </div>
-      </div>
-
-      <h3>Blog + Presentations + Notebooks</h3>
-      <ul>
-        <li>
-          <a href="https://beatobongco.com/UI-Kata/">UI Kata</a>
-          <small>website</small>
-          <p>Tiny UI experiments of mine inspired by life and work.</p>
-        </li>
-        <li>
-          <a
-            href="https://docs.google.com/presentation/d/1R9FtgOzvE9BOaYqWbaWC4ljv2BNl4Vukx27N7-O4Kow/"
-          >
-            WTF is GPT-3?</a
-          >
-          <small>presentation</small>
-          <p>
-            Bird's eye view of OpenAI's GPT-3 model. What is it? What can it do?
-            What were the breakthroughs?
-          </p>
-        </li>
-        <li>
-          <a href="https://github.com/beatobongco/dune_ir">
-            Information Retrieval with the Dune book</a
-          >
-          <small>code, presentation</small>
-          <p>
-            Learn how TF-IDF and BM25 works by stepping through code and
-            searching through the Dune book. Comes with a clonable webapp and
-            <a
-              href="https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy0S8/"
-              >presentation</a
-            >.
-          </p>
-        </li>
-        <li>
-          <a
-            href="https://github.com/beatobongco/naive_bayesline/blob/main/NaiveBayesline.ipynb"
-          >
-            Naive Bayesline: From Naive Bayes to NBSVM</a
-          >
-          <small>ipython notebook</small>
-          <p>
-            A notebook that shows how Naive Bayes works and builds up to NBSVM,
-            a fast baseline for text classification with accuracy rivaling
-            Transformer-based approaches.
-          </p>
-        </li>
-        <li>Watch this space for more content!</li>
-      </ul>
-
-      <p><small>© 2021 Beato Bongco</small></p>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <script>
+        function revealEmail() {
+            const emailElement = document.getElementById('email');
+            const emailAddress = 'beato@anycase.ai';
+            const encodedEmail = emailAddress.replace('@', ' [at] ');
+
+            if (emailElement.textContent === 'Click to reveal') {
+                emailElement.textContent = encodedEmail;
+                emailElement.setAttribute('title', 'Click to copy');
+            } else {
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    emailElement.textContent = 'Copied to clipboard!';
+                    setTimeout(() => {
+                        emailElement.textContent = encodedEmail;
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }
+        }
+    </script>
+</body>
+
 </html>
