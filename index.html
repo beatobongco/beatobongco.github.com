@@ -96,13 +96,17 @@
             margin-top: 20px;
             display: grid;
             grid-template-columns: auto 1fr;
-            gap: 10px;
+            gap: 1rem;
             align-items: center;
         }
 
         .contact-label {
             font-weight: bold;
             color: #b30000;
+        }
+
+        .x-container {
+            display: flex;
         }
 
         .x-logo {
@@ -202,7 +206,7 @@
             </div>
             <div class="contact">
                 <p>E-mail: <span id="email" class="hidden-email" onclick="revealEmail()">Click to reveal</span></p>
-                <p>
+                <p class="x-container">
                     <span class="x-logo">𝕏</span>:
                     <a href="https://x.com/brbongco" target="_blank">@brbongco</a>
                 </p>
