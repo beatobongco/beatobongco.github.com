@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beato Bongco | anycase.ai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <style>
         body,
         html {
             height: 100%;
             margin: 0;
-            font-family: 'Courier', monospace;
+            font-family: 'Roboto Mono', monospace;
             background-color: #f8f6f1;
             display: flex;
             justify-content: center;
@@ -47,10 +54,14 @@
             color: #b30000;
         }
 
+        .title-container {
+            margin-bottom: 20px;
+        }
+
         .title {
             margin-bottom: 5px;
-            font-weight: 500;
             font-size: 18px;
+            font-weight: 700;
         }
 
         .title a {
@@ -62,6 +73,7 @@
 
         .highlight {
             color: #b30000;
+            font-weight: 700;
         }
 
         .quote {
@@ -191,9 +203,10 @@
     <div class="design geometric">
         <div class="card">
             <h1 class="name">Beato Bongco</h1>
-            <h2 class="title"><a href="https://anycase.ai" target="_blank">Anycase.ai</a> - co-founder & CEO</h2>
-            <p>Augmenting legal professionals with Artificial Intelligence</p>
-            <br>
+            <div class="title-container">
+                <h2 class="title"><a href="https://anycase.ai" target="_blank">Anycase.ai</a> - co-founder & CEO</h2>
+                <p>Augmenting legal professionals with Artificial Intelligence</p>
+            </div>
             <p><span class="highlight">Full-stack Web, NLP & AI Engineer</span></p>
             <p>Specializing in Retrieval Augmented Generation (RAG)</p>
             <div class="quote">
@@ -207,7 +220,8 @@
             <div class="contact">
                 <p>E-mail: <span id="email" class="hidden-email" onclick="revealEmail()">Click to reveal</span></p>
                 <p class="x-container">
-                    <span class="x-logo">𝕏</span>:
+                    <span class="x-logo">𝕏</span>
+                    <span>:&nbsp;</span>
                     <a href="https://x.com/brbongco" target="_blank">@brbongco</a>
                 </p>
             </div>
