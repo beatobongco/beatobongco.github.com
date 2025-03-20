@@ -102,6 +102,7 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
+            margin-top: -2px;
         }
 
         .contact {
@@ -129,6 +130,22 @@
         .hidden-email {
             color: #b30000;
             cursor: pointer;
+        }
+
+        .contact-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .contact-column {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .contact-column p {
+            font-size: 14px;
         }
 
         @media (max-width: 600px) {
@@ -175,6 +192,14 @@
             .x-logo {
                 font-size: 14px;
             }
+
+            .contact-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-column {
+                align-items: start;
+            }
         }
 
         .design {
@@ -204,7 +229,8 @@
         <div class="card">
             <h1 class="name">Beato Bongco</h1>
             <div class="title-container">
-                <h2 class="title"><a href="https://anycase.ai" target="_blank">Anycase.ai</a> - co-founder & Builder CEO</h2>
+                <h2 class="title"><a href="https://anycase.ai" target="_blank">Anycase.ai</a> - co-founder & Builder CEO
+                </h2>
                 <p>Augmenting legal professionals with Artificial Intelligence</p>
             </div>
             <p><span class="highlight">Full-stack AI Product Engineer</span></p>
@@ -218,22 +244,43 @@
                     Symbiosis</a>
             </div>
             <div class="contact">
-                <p>E-mail: <span id="email" class="hidden-email" onclick="revealEmail()">Click to reveal</span></p>
-                <p class="x-container">
-                    <span class="x-logo">𝕏</span>
-                    <span>:&nbsp;</span>
-                    <a href="https://x.com/brbongco" target="_blank">@brbongco</a>
-                </p>
-                <p>
-                    <a href="https://beatobongco.com/UI-Kata/">Fun</a>
-                </p>
+                <div class="contact-row">
+                    <div class="contact-column">
+                        <p>E-mail: <span id="email" class="hidden-email" onclick="revealEmail()">Click to reveal</span>
+                        </p>
+                    </div>
+                    <div class="contact-column">
+                        <p>
+                            <span>🧪</span>
+                            <span>:&nbsp;</span>
+                            <a href="https://beatobongco.com/blog/" target="_blank">old fun</a>
+                        </p>
+                    </div>
+                    <div class="contact-column">
+                        <p class="x-container">
+                            <span class="x-logo">𝕏</span>
+                            <span>:&nbsp;</span>
+                            <a href="https://x.com/brbongco" target="_blank">@brbongco</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script>
         function revealEmail() {
             const emailElement = document.getElementById('email');
-            const emailAddress = 'beato@anycase.ai';
+            const obfuscatedEmail = 'cfbupAbozdbtf/bj';
+
+            const decodeEmail = (encoded) => {
+                let decoded = '';
+                for (let i = 0; i < encoded.length; i++) {
+                    decoded += String.fromCharCode(encoded.charCodeAt(i) - 1);
+                }
+                return decoded;
+            };
+
+            const emailAddress = decodeEmail(obfuscatedEmail);
             const encodedEmail = emailAddress.replace('@', ' [at] ');
 
             if (emailElement.textContent === 'Click to reveal') {
