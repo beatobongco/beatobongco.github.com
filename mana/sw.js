@@ -1,4 +1,4 @@
-const CACHE = 'mana-counter-f060b0abbe2b';
+const CACHE = 'mana-counter-4355efd944c5';
 const ASSETS = ['./', 'index.html', 'style.css', 'state.js', 'press.js', 'app.js', 'manifest.webmanifest', 'assets/mana.woff2', 'assets/eclipse.svg', 'assets/icon.svg', 'assets/icon-192.png', 'assets/icon-512.png', 'assets/OFL.txt', 'assets/MANA-README.md', 'mana-counter.html'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))));
 self.addEventListener('activate', event => event.waitUntil((async () => {
