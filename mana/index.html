@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#17131e">
+<meta name="description" content="A quiet place for big mana. A free, offline-capable Magic mana pool counter.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Mana Counter</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+<script src="state.js" defer></script>
+<script src="press.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div id="backdrop" aria-hidden="true"></div><div class="veil" aria-hidden="true"></div>
+<main>
+<header><div><h1>Mana Counter</h1></div><button id="reset" class="quiet">↺ <span>Reset</span></button></header>
+<section id="pools" aria-label="Mana pools"></section>
+<p id="press-hint" hidden>Tap for 1 · Hold to repeat 3</p>
+<button id="add" class="add">＋ Add mana type</button>
+<section class="total" aria-label="Total mana"><div><h2>Total mana</h2></div><output id="total">0</output></section>
+<section class="activity" aria-labelledby="activity-title"><div class="activity-header"><h2 id="activity-title">Recent activity</h2><button id="clear-history" class="text-button" disabled>Clear history</button></div><ol id="activity-entries" tabindex="0" aria-label="Mana activity, newest first"></ol></section>
+<footer><span id="offline-status">Checking offline support…</span><button id="appearance" class="quiet">◐ Appearance</button><button id="help" class="text-button">Install & about</button></footer>
+<p id="notice" role="status" aria-live="polite"></p>
+<noscript>This counter needs JavaScript enabled. All counting happens on your device.</noscript>
+</main>
+<dialog id="types-dialog"><div class="dialog-header"><h2>Add mana</h2><button class="close quiet" aria-label="Close add mana">✕</button></div><div id="type-options"></div><p class="hint">Colorless is a mana type. Generic costs can be paid with any type.</p></dialog>
+<dialog id="appearance-dialog"><div class="dialog-header"><h2>Your atmosphere</h2><button class="close quiet" aria-label="Close appearance">✕</button></div><p class="hint">Choose a backdrop. Your image stays on this device.</p><div class="themes"><button data-theme="temple">Eclipse</button><button data-theme="plain">Quiet dark</button></div><label class="file-button" for="background">Choose your own image<input id="background" type="file" accept="image/png,image/jpeg,image/webp"></label><p class="hint">PNG, JPEG or WebP · up to 10 MB. Use artwork you have permission to use. Changing your background won’t change the public app.</p></dialog>
+<dialog id="help-dialog"><div class="dialog-header"><h2>Ready for the table</h2><button class="close quiet" aria-label="Close help">✕</button></div><p>Tap either button to add or spend one mana. Hold either button to add or spend three every second until you release; releasing adds nothing extra. Minus stops at zero. Undo reverses a grouped burst of taps or a whole hold in one action. The activity log shows newest changes first and keeps the latest 200 entries; Undo marks the original entry as Undone. Reset clears mana and recent activity; Undo can restore the mana, but cleared activity stays cleared. Clear history only clears the activity log. Same-direction taps accumulate for three seconds; then the badge dims. The next tap starts a new adjustment. Undo restores your last action, including Reset or removing a pool.</p><h3>Install & use offline</h3><p id="install-help">Open the hosted app once while online. On iPhone or iPad: Safari → Share → Add to Home Screen. On Android or desktop: use your browser’s Install app option. Wait for “Ready offline” before leaving the network.</p><button id="install" hidden>Install Mana Counter</button><p><a href="mana-counter.html" download>Download a standalone HTML copy</a> — open the saved file in a browser without internet. Home-screen installation requires the hosted HTTPS version.</p><p>Your pool and appearance are saved in this browser. Clearing browser data removes them. Offline copies and the hosted app have separate saved state.</p><details><summary>Credits & rights</summary><p>Unofficial fan tool. Not approved or endorsed by Wizards of the Coast. Magic: The Gathering, card names and mana symbol artwork belong to Wizards of the Coast LLC. © Wizards of the Coast LLC.</p><p>Symbols use <a href="https://mana.andrewgioia.com/">Mana by Andrew Gioia</a>. Font: SIL OFL 1.1. The font license does not grant rights to Wizards’ artwork or trademarks. <a href="assets/OFL.txt">Font license</a> · <a href="assets/MANA-README.md">Original notices</a> · <a href="https://company.wizards.com/en/legal/fancontentpolicy">Fan Content Policy</a>.</p><p>The default eclipse backdrop is original artwork created for this app. No card artwork is bundled.</p></details></dialog>
+</body>
+</html>
